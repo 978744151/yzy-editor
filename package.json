@@ -1,0 +1,82 @@
+{
+  "name": "custom-amis",
+  "version": "0.0.8",
+  "type": "module",
+  "main": "./lib/main.umd.cjs",
+  "module": "./lib/main.js",
+  "private": false,
+  "license": "ISC",
+  "exports": {
+    ".": {
+      "import": "./esm/main.js",
+      "require": "./lib/main.umd.cjs"
+    },
+    "./lib/style.css": "./lib/style.css"
+  },
+  "files": [
+    "lib",
+    "esm",
+    "src/packages"
+  ],
+  "scripts": {
+    "dev": "vite --mode code",
+    "dev:yzw": "vite --mode yzw",
+    "build": "vite build --mode production",
+    "build:lib": "vite build --mode production_umd",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "prettier": "prettier --write src/**/*.{vue,js,ts,jsx,tsx,scss,md,json}"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.2.6",
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "@npkg/tinymce-plugins": "^0.0.7",
+    "@tinymce/tinymce-vue": "^5.1.1",
+    "crypto-js": "^4.1.1",
+    "amis": "6.4.1",
+    "amis-core": "6.4.1",
+    "amis-formula": "6.4.1",
+    "amis-ui": "6.4.1",
+    "amis-editor": "6.4.1",
+    "amis-editor-core": "6.4.1",
+    "antd": "^5.8.6",
+    "axios": "^1.5.0",
+    "element-plus": "^2.4.4",
+    "file-saver": "^2.0.5",
+    "lodash": "^4.17.21",
+    "mobx-state-tree": "^3.17.3",
+    "qs": "^6.11.2",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-router": "^5.0.1",
+    "react-router-dom": "^5.0.1",
+    "tinymce-plugin": "^0.0.5-bate.4",
+    "veaury": "^2.3.12",
+    "vue": "^3.4.5"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/plugin-proposal-decorators": "^7.22.15",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-router-dom": "^5.3.3",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "@vitejs/plugin-react": "^4.0.3",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "@vitejs/plugin-vue-jsx": "^3.0.1",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^8.0.0",
+    "eslint-define-config": "^1.15.0",
+    "eslint-plugin-prettier": "^5.1.2",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "prettier": "^3.1.1",
+    "sass": "^1.63.6",
+    "typescript": "^5.3.3",
+    "unplugin-auto-import": "^0.17.3",
+    "unplugin-vue-components": "^0.26.0",
+    "vite": "^4.4.5"
+  }
+}

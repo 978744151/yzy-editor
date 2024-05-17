@@ -1,0 +1,54 @@
+.comp {
+  overflow: auto;
+  height: calc(100vh - 200px);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.comp-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 48%;
+  &-item {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px 0;
+    cursor: pointer;
+
+    &-logo {
+      border-radius: 10px;
+      height: 48px;
+      width: 48px;
+      font-size: 30px;
+      line-height: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      background-color: #5287e6e6;
+    }
+
+    &-text {
+      margin-top: 5px;
+      // overflow: hidden;
+      text-overflow: ellipsis;
+      display: inline-block;
+      white-space: nowrap;
+    }
+  }
+
+  ::after {
+  }
+}
+
+.comp-icon {
+  color: white;
+  font-size: 16px;
+}
+
+.comp-refresh-icon {
+  cursor: pointer;
+}

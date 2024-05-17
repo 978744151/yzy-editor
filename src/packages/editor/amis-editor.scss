@@ -1,0 +1,163 @@
+.my-collapse-group {
+  .cxd-Collapse-header {
+    width: 100%;
+    // background-color: #f2f2f4 !important;
+    border-radius: 0 !important;
+    padding: 10px 12px;
+    // display: flex;
+    // justify-content: space-between !important;
+    // font-size: 14px;
+    // align-items: center;
+    // color: #070c14;
+    // border: 1px solid transparent;
+    // border-color: var(--collapse-default-top-border-color)
+    //   var(--collapse-default-right-border-color)
+    //   var(--collapse-default-bottom-border-color)
+    //   var(--collapse-default-left-border-color);
+  }
+  .cxd-Collapse-body {
+    // padding: 10px 0px 5px 5px;
+    border-bottom: none;
+    .cxd-Combo-itemInner {
+      margin-right: 0;
+    }
+    .cxd-Form-row {
+      align-items: stretch;
+    }
+    .cxd-Form-col {
+      height: auto;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .cxd-SwitchControl {
+        padding-top: 0;
+      }
+    }
+  }
+  .cxd-Collapse-content {
+    padding: 5px !important;
+  }
+
+  .my-panel-form {
+    // padding: 0 10px;
+    .cxd-Form-item {
+      margin-bottom: 10px;
+    }
+    .cxd-Form-label .cxd-TplField {
+      background-color: #303540;
+      color: #fff;
+      font-weight: bold;
+      border: 1px solid #000;
+      padding: 4px;
+      border-radius: 4px;
+    }
+    .cxd-Form-value {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+  .my-mini-table-row {
+    td {
+      padding: 5px;
+    }
+  }
+
+  .cxd-Table {
+    .cxd-Form-item {
+      margin-bottom: 0;
+    }
+  }
+  .my-field {
+    .cxd-PlainField {
+      background-color: #303540;
+      color: #fff;
+      font-weight: bold;
+      border: 1px solid #000;
+      padding: 2px 4px;
+      border-radius: 2px;
+    }
+  }
+}
+.my-panel {
+  border: none !important;
+  .cxd-Panel-body {
+    padding: 0;
+  }
+  // 保存按钮样式
+  .cxd-Panel-btnToolbar .cxd-Button {
+    margin-left: 0;
+  }
+}
+.cxd-Form {
+  // grid 统一加margin
+  .cxd-Grid > * {
+    margin: calc(var(--Form-item-gap) / 2) 0 !important;
+  }
+  .my-form-item {
+    .cxd-Grid > * {
+      margin: 0 !important;
+    }
+  }
+  &.bordered {
+    .cxd-Grid {
+      border: 1px solid #ddd;
+      border-bottom: none;
+      border-left: none;
+
+      & > * {
+        padding-left: 0;
+        padding-right: 0;
+        align-items: stretch;
+        // bordered 统一去除margin
+        margin: 0 !important;
+      }
+      .cxd-Form-item {
+        height: 100%;
+      }
+      .cxd-Form-label {
+        border-bottom: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        border-left: 1px solid #ddd;
+        background: #f8f8f8;
+        margin-right: 0;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+      }
+      .cxd-Form-value {
+        border-bottom: 1px solid #ddd;
+        padding: 10px;
+      }
+    }
+  }
+}
+.antd-Form {
+  .antd-Grid > * {
+    margin: calc(var(--Form-item-gap) / 2) 0 !important;
+  }
+  .my-form-item {
+    .cxd-Grid > * {
+      margin: 0 !important;
+    }
+  }
+}
+
+.cxd-Form-static {
+  // 静态表单隐藏placeholder
+  .text-muted {
+    display: none;
+  }
+}
+
+.my-combo {
+  .cxd-ComboControl {
+    .cxd-Form-item {
+      .cxd-Form-label {
+        &.cxd-Form-itemColumn--2 {
+          flex: none !important;
+          max-width: none !important;
+        }
+      }
+    }
+  }
+}
